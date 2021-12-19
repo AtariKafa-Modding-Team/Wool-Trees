@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "wool_trees:blocks/black_wool_tree_sapling",
+    "particle": "wool_trees:blocks/black_wool_tree_sapling"
+  }
+}
