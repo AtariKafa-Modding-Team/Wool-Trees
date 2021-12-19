@@ -8,7 +8,16 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "wool_trees",
