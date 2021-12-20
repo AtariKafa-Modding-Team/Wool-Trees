@@ -41,13 +41,13 @@ public class WhiteWoolBlockDestroyedProcedure {
 		if (0.1 > Math.random()) {
 			if (world instanceof World && !world.isRemote()) {
 				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WhiteWoolSaplingBlock.block));
-				entityToSpawn.setPickupDelay((int) 10);
+				entityToSpawn.setPickupDelay((int) 0);
 				world.addEntity(entityToSpawn);
 			}
 		} else {
 			if (world instanceof World && !world.isRemote()) {
 				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.WHITE_WOOL));
-				entityToSpawn.setPickupDelay((int) 10);
+				entityToSpawn.setPickupDelay((int) 0);
 				world.addEntity(entityToSpawn);
 			}
 		}
