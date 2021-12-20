@@ -90,12 +90,53 @@
       "ids": {},
       "registry_name": "white_wool",
       "path": "~/Blocks/Leaves/WhiteWool"
+    },
+    {
+      "name": "BlackWoolBlockDestroyed",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wool_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/WhiteWool"
+    },
+    {
+      "name": "BlackWool",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wool",
+      "path": "~/Blocks/Leaves/WhiteWool"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.wool_trees.black_wool": "Black Wool",
       "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
       "block.wool_trees.white_wool_sapling": "White Wool Sapling",
       "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool"
@@ -112,6 +153,10 @@
             "children": [
               {
                 "name": "WhiteWool",
+                "children": []
+              },
+              {
+                "name": "BlackWool",
                 "children": []
               }
             ]
