@@ -9,9 +9,7 @@ import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.biome.BiomeColors;
-import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.GrassColors;
 import net.minecraft.util.math.vector.Vector3d;
@@ -32,24 +30,18 @@ import net.minecraft.block.FallingBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import java.util.stream.Stream;
-import java.util.Random;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Collections;
-import java.util.AbstractMap;
 
-import com.atarikafa.wooltrees.procedures.CheckDirtProcedure;
 import com.atarikafa.wooltrees.WoolTreesModElements;
 
 @WoolTreesModElements.ModElement.Tag
-public class BlackWoolSaplingBlock extends WoolTreesModElements.ModElement {
-	@ObjectHolder("wool_trees:black_wool_sapling")
+public class WhiteWoolSaplingBlock extends WoolTreesModElements.ModElement {
+	@ObjectHolder("wool_trees:white_wool_sapling")
 	public static final Block block = null;
 
-	public BlackWoolSaplingBlock(WoolTreesModElements instance) {
-		super(instance, 1);
+	public WhiteWoolSaplingBlock(WoolTreesModElements instance) {
+		super(instance, 3);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 	}
 
@@ -79,7 +71,7 @@ public class BlackWoolSaplingBlock extends WoolTreesModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.PLANTS).sound(SoundType.PLANT).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0)
 					.doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
-			setRegistryName("black_wool_sapling");
+			setRegistryName("white_wool_sapling");
 		}
 
 		@Override
@@ -108,29 +100,6 @@ public class BlackWoolSaplingBlock extends WoolTreesModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(blockstate, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(pos, this, 10);
-		}
-
-		@Override
-		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(blockstate, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-
-			CheckDirtProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			world.getPendingBlockTicks().scheduleTick(pos, this, 10);
 		}
 	}
 }

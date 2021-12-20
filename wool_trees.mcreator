@@ -10,13 +10,95 @@
       "ids": {},
       "registry_name": "black_wool_sapling",
       "path": "~/Blocks"
+    },
+    {
+      "name": "WhiteWoolSapling",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_wool_sapling",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CheckDirt",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "check_dirt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WhiteWoolBlockDestroyed",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_wool_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/WhiteWool"
+    },
+    {
+      "name": "WhiteWool",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_wool",
+      "path": "~/Blocks/Leaves/WhiteWool"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.wool_trees.black_wool_sapling": "Black Wool Sapling"
+      "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
+      "block.wool_trees.white_wool_sapling": "White Wool Sapling",
+      "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool"
     }
   },
   "foldersRoot": {
@@ -27,7 +109,12 @@
         "children": [
           {
             "name": "Leaves",
-            "children": []
+            "children": [
+              {
+                "name": "WhiteWool",
+                "children": []
+              }
+            ]
           }
         ]
       },
