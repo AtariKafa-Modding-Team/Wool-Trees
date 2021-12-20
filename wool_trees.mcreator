@@ -24,7 +24,12 @@
     "children": [
       {
         "name": "Blocks",
-        "children": []
+        "children": [
+          {
+            "name": "Leaves",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Items",
