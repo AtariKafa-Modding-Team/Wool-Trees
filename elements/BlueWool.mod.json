@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "Blocks.WOOL#11"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
