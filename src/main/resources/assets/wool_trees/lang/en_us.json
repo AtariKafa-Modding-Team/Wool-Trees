@@ -6,5 +6,6 @@
   "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
   "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
   "block.wool_trees.white_wool_sapling": "White Wool Sapling",
-  "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool"
+  "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool",
+  "block.wool_trees.brown_wool": "Brown Wool"
 }

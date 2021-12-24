@@ -199,6 +199,46 @@
       "ids": {},
       "registry_name": "brown_wool_sapling",
       "path": "~/Blocks"
+    },
+    {
+      "name": "BrownWoolBlockDestroyed",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brown_wool_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/BrownWool"
+    },
+    {
+      "name": "BrownWool",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brown_wool",
+      "path": "~/Blocks/Leaves/BrownWool"
     }
   ],
   "variable_elements": [],
@@ -212,7 +252,8 @@
       "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
       "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
       "block.wool_trees.white_wool_sapling": "White Wool Sapling",
-      "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool"
+      "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool",
+      "block.wool_trees.brown_wool": "Brown Wool"
     }
   },
   "foldersRoot": {
@@ -234,6 +275,10 @@
               },
               {
                 "name": "BlueWool",
+                "children": []
+              },
+              {
+                "name": "BrownWool",
                 "children": []
               }
             ]
