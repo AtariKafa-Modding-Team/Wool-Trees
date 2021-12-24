@@ -189,6 +189,16 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "wool_trees"
+    },
+    {
+      "name": "BrownWoolSapling",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brown_wool_sapling",
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -196,6 +206,7 @@
   "language_map": {
     "en_us": {
       "block.wool_trees.black_wool": "com.atarikafa.wool_trees.black_wool",
+      "block.wool_trees.brown_wool_sapling": "Brown Wool Sapling",
       "block.wool_trees.blue_wool_sapling": "Blue Wool Sapling",
       "itemGroup.tabwool_trees": "Wool Trees",
       "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
