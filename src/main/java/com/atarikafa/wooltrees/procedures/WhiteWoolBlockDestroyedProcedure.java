@@ -38,7 +38,7 @@ public class WhiteWoolBlockDestroyedProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		if (0.1 > Math.random()) {
+		if (0.25 > Math.random()) {
 			if (world instanceof World && !world.isRemote()) {
 				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WhiteWoolSaplingBlock.block));
 				entityToSpawn.setPickupDelay((int) 0);
