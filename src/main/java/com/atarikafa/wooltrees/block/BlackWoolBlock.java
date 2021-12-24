@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.Explosion;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
@@ -27,6 +28,7 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import com.atarikafa.wooltrees.procedures.BlackWoolBlockDestroyedProcedure;
+import com.atarikafa.wooltrees.procedures.BlackWoolBlockDestroyedByPlayerProcedure;
 import com.atarikafa.wooltrees.WoolTreesModElements;
 
 @WoolTreesModElements.ModElement.Tag
@@ -75,11 +77,24 @@ public class BlackWoolBlock extends WoolTreesModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 
+			BlackWoolBlockDestroyedByPlayerProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			return retval;
+		}
+
+		@Override
+		public void onExplosionDestroy(World world, BlockPos pos, Explosion e) {
+			super.onExplosionDestroy(world, pos, e);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+
 			BlackWoolBlockDestroyedProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			return retval;
 		}
 	}
 }

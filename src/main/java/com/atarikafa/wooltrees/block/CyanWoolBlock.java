@@ -27,6 +27,7 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import com.atarikafa.wooltrees.procedures.CyanWoolBlockDestroyedProcedure;
+import com.atarikafa.wooltrees.procedures.CyanWoolBlockDestroyedByPlayerProcedure;
 import com.atarikafa.wooltrees.WoolTreesModElements;
 
 @WoolTreesModElements.ModElement.Tag
@@ -70,9 +71,9 @@ public class CyanWoolBlock extends WoolTreesModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 
-			CyanWoolBlockDestroyedProcedure.executeProcedure(Stream
+			CyanWoolBlockDestroyedByPlayerProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}

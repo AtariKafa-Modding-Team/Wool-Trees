@@ -122,6 +122,9 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onDestroyedByPlayer": {
+      "name": "BlackWoolBlockDestroyedByPlayer"
+    },
+    "onDestroyedByExplosion": {
       "name": "BlackWoolBlockDestroyed"
     },
     "spawnWorldTypes": [],
