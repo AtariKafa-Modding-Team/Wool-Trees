@@ -1,7 +1,7 @@
 {
-  "parent": "block/crop",
+  "parent": "block/cross",
   "textures": {
-    "crop": "wool_trees:blocks/white_wool_tree_sapling",
+    "cross": "wool_trees:blocks/white_wool_tree_sapling",
     "particle": "wool_trees:blocks/white_wool_tree_sapling"
   }
 }
