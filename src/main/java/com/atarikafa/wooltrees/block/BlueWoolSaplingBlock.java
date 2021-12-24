@@ -16,7 +16,6 @@ import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -35,6 +34,7 @@ import java.util.Collections;
 import java.util.AbstractMap;
 
 import com.atarikafa.wooltrees.procedures.CheckDirtProcedure;
+import com.atarikafa.wooltrees.itemgroup.WoolTreesItemGroup;
 import com.atarikafa.wooltrees.WoolTreesModElements;
 
 @WoolTreesModElements.ModElement.Tag
@@ -49,7 +49,7 @@ public class BlueWoolSaplingBlock extends WoolTreesModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(WoolTreesItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
