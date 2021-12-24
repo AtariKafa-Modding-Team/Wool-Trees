@@ -239,6 +239,56 @@
       "ids": {},
       "registry_name": "brown_wool",
       "path": "~/Blocks/Leaves/BrownWool"
+    },
+    {
+      "name": "CyanWoolSapling",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyan_wool_sapling",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CyanWoolBlockDestroyed",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyan_wool_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/CyanWool"
+    },
+    {
+      "name": "CyanWool",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyan_wool",
+      "path": "~/Blocks/Leaves/CyanWool"
     }
   ],
   "variable_elements": [],
@@ -250,6 +300,8 @@
       "block.wool_trees.blue_wool_sapling": "Blue Wool Sapling",
       "itemGroup.tabwool_trees": "Wool Trees",
       "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
+      "block.wool_trees.cyan_wool": "Cyan Wool",
+      "block.wool_trees.cyan_wool_sapling": "Cyan Wool Sapling",
       "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
       "block.wool_trees.white_wool_sapling": "White Wool Sapling",
       "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool",
@@ -279,6 +331,10 @@
               },
               {
                 "name": "BrownWool",
+                "children": []
+              },
+              {
+                "name": "CyanWool",
                 "children": []
               }
             ]
