@@ -13,7 +13,7 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "white_wool_tree_sapling",
     "particleTexture": "",
     "tintType": "Grass",
     "isItemTinted": false,
