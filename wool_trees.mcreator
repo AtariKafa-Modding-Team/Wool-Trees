@@ -140,6 +140,46 @@
       "ids": {},
       "registry_name": "blue_wool_sapling",
       "path": "~/Blocks"
+    },
+    {
+      "name": "BlueWoolBlockDestroyed",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_wool_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/BlueWool"
+    },
+    {
+      "name": "BlueWool",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_wool",
+      "path": "~/Blocks/Leaves/BlueWool"
     }
   ],
   "variable_elements": [],
@@ -148,6 +188,7 @@
     "en_us": {
       "block.wool_trees.black_wool": "com.atarikafa.wool_trees.black_wool",
       "block.wool_trees.blue_wool_sapling": "Blue Wool Sapling",
+      "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
       "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
       "block.wool_trees.white_wool_sapling": "White Wool Sapling",
       "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool"
@@ -168,6 +209,10 @@
               },
               {
                 "name": "BlackWool",
+                "children": []
+              },
+              {
+                "name": "BlueWool",
                 "children": []
               }
             ]
