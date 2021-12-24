@@ -119,7 +119,7 @@
           }
         ]
       },
-      "path": "~/Blocks/Leaves/WhiteWool"
+      "path": "~/Blocks/Leaves/BlackWool"
     },
     {
       "name": "BlackWool",
@@ -129,14 +129,14 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "black_wool",
-      "path": "~/Blocks/Leaves/WhiteWool"
+      "path": "~/Blocks/Leaves/BlackWool"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.wool_trees.black_wool": "Black Wool",
+      "block.wool_trees.black_wool": "com.atarikafa.wool_trees.black_wool",
       "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
       "block.wool_trees.white_wool_sapling": "White Wool Sapling",
       "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool"

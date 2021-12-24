@@ -8,7 +8,7 @@ import net.minecraft.block.Blocks;
 
 import java.util.Map;
 
-import com.atarikafa.wooltrees.block.WhiteWoolSaplingBlock;
+import com.atarikafa.wooltrees.block.BlackWoolSaplingBlock;
 import com.atarikafa.wooltrees.WoolTreesMod;
 
 public class BlackWoolBlockDestroyedProcedure {
@@ -40,14 +40,14 @@ public class BlackWoolBlockDestroyedProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		if (0.1 > Math.random()) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WhiteWoolSaplingBlock.block));
-				entityToSpawn.setPickupDelay((int) 0);
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackWoolSaplingBlock.block));
+				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
 		} else {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.WHITE_WOOL));
-				entityToSpawn.setPickupDelay((int) 0);
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.BLACK_WOOL));
+				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
 		}

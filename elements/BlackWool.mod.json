@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Black Wool",
+    "name": "com.atarikafa.wool_trees.black_wool",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "Blocks.WOOL#15"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -122,9 +122,6 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onDestroyedByPlayer": {
-      "name": "BlackWoolBlockDestroyed"
-    },
-    "onDestroyedByExplosion": {
       "name": "BlackWoolBlockDestroyed"
     },
     "spawnWorldTypes": [],
