@@ -459,23 +459,109 @@
         ]
       },
       "path": "~/Blocks/Leaves/WhiteWool"
+    },
+    {
+      "name": "GrayWoolSapling",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gray_wool_sapling",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "GrayWoolBlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gray_wool_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/GrayWool"
+    },
+    {
+      "name": "GrayWoolBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gray_wool_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/GrayWool"
+    },
+    {
+      "name": "GrayWool",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gray_wool",
+      "path": "~/Blocks/Leaves/GrayWool"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.wool_trees.black_wool": "com.atarikafa.wool_trees.black_wool",
       "block.wool_trees.brown_wool_sapling": "Brown Wool Sapling",
-      "block.wool_trees.blue_wool_sapling": "Blue Wool Sapling",
       "itemGroup.tabwool_trees": "Wool Trees",
       "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
       "block.wool_trees.cyan_wool": "com.atarikafa.wool_trees.cyan_wool",
       "block.wool_trees.cyan_wool_sapling": "Cyan Wool Sapling",
-      "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
       "block.wool_trees.white_wool_sapling": "White Wool Sapling",
+      "block.wool_trees.brown_wool": "Brown Wool",
+      "block.wool_trees.black_wool": "com.atarikafa.wool_trees.black_wool",
+      "block.wool_trees.blue_wool_sapling": "Blue Wool Sapling",
+      "block.wool_trees.gray_wool": "Gray Wool",
       "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool",
-      "block.wool_trees.brown_wool": "Brown Wool"
+      "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
+      "block.wool_trees.gray_wool_sapling": "Gray Wool Sapling"
     }
   },
   "foldersRoot": {
@@ -505,6 +591,10 @@
               },
               {
                 "name": "CyanWool",
+                "children": []
+              },
+              {
+                "name": "GrayWool",
                 "children": []
               }
             ]
