@@ -28,7 +28,6 @@ import java.util.AbstractMap;
 
 import com.atarikafa.wooltrees.procedures.GrayWoolBlockDestroyedByPlayerProcedure;
 import com.atarikafa.wooltrees.procedures.GrayWoolBlockDestroyedByExplosionProcedure;
-import com.atarikafa.wooltrees.itemgroup.WoolTreesItemGroup;
 import com.atarikafa.wooltrees.WoolTreesModElements;
 
 @WoolTreesModElements.ModElement.Tag
@@ -43,7 +42,7 @@ public class GrayWoolBlock extends WoolTreesModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(WoolTreesItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 
 	public static class CustomBlock extends Block {
