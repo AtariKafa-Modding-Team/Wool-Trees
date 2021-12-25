@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Gray Wool",
+    "name": "com.atarikafa.wool_trees.gray_wool",
     "specialInfo": [],
     "hardness": 0.8,
     "resistance": 0.8,

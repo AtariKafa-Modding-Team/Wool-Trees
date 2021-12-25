@@ -730,7 +730,7 @@
       "block.wool_trees.black_wool": "com.atarikafa.wool_trees.black_wool",
       "block.wool_trees.green_wool_sapling": "Green Wool Sapling",
       "block.wool_trees.blue_wool_sapling": "Blue Wool Sapling",
-      "block.wool_trees.gray_wool": "Gray Wool",
+      "block.wool_trees.gray_wool": "com.atarikafa.wool_trees.gray_wool",
       "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool",
       "block.wool_trees.black_wool_sapling": "Black Wool Sapling",
       "block.wool_trees.gray_wool_sapling": "Gray Wool Sapling"
