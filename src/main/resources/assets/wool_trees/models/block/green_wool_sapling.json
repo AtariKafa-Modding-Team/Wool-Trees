@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "wool_trees:blocks/green_wool_tree_sapling",
+    "particle": "wool_trees:blocks/green_wool_tree_sapling"
+  }
+}

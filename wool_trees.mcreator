@@ -543,6 +543,90 @@
       "ids": {},
       "registry_name": "gray_wool",
       "path": "~/Blocks/Leaves/GrayWool"
+    },
+    {
+      "name": "GreenWoolSapling",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_wool_sapling",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "GreenWoolBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_wool_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/GreenWool"
+    },
+    {
+      "name": "GreenWoolBlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_wool_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/GreenWool"
+    },
+    {
+      "name": "GreenWool",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_wool",
+      "path": "~/Blocks/Leaves/GreenWool"
     }
   ],
   "variable_elements": [],
@@ -554,9 +638,11 @@
       "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
       "block.wool_trees.cyan_wool": "com.atarikafa.wool_trees.cyan_wool",
       "block.wool_trees.cyan_wool_sapling": "Cyan Wool Sapling",
-      "block.wool_trees.white_wool_sapling": "White Wool Sapling",
       "block.wool_trees.brown_wool": "Brown Wool",
+      "block.wool_trees.white_wool_sapling": "White Wool Sapling",
+      "block.wool_trees.green_wool": "Green Wool",
       "block.wool_trees.black_wool": "com.atarikafa.wool_trees.black_wool",
+      "block.wool_trees.green_wool_sapling": "Green Wool Sapling",
       "block.wool_trees.blue_wool_sapling": "Blue Wool Sapling",
       "block.wool_trees.gray_wool": "Gray Wool",
       "block.wool_trees.white_wool": "com.atarikafa.wool_trees.white_wool",
@@ -595,6 +681,10 @@
               },
               {
                 "name": "GrayWool",
+                "children": []
+              },
+              {
+                "name": "GreenWool",
                 "children": []
               }
             ]
