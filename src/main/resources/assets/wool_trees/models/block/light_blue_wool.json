@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "wool_trees:blocks/light_blue_wool",
+    "particle": "wool_trees:blocks/light_blue_wool"
+  }
+}
