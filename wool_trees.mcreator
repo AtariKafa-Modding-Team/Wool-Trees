@@ -838,7 +838,7 @@
           }
         ]
       },
-      "path": "~/Blocks/Leaves/LightGrayWool"
+      "path": "~/Blocks/Leaves/LimeWool"
     },
     {
       "name": "LimeWoolBlockDestroyedByExplosion",
@@ -868,7 +868,7 @@
           }
         ]
       },
-      "path": "~/Blocks/Leaves/LightGrayWool"
+      "path": "~/Blocks/Leaves/LimeWool"
     },
     {
       "name": "LimeWool",
@@ -878,7 +878,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lime_wool",
-      "path": "~/Blocks/Leaves/LightGrayWool"
+      "path": "~/Blocks/Leaves/LimeWool"
     }
   ],
   "variable_elements": [],
