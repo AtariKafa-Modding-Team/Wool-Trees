@@ -1,10 +1,12 @@
 {
   "block.wool_trees.light_blue_wool_sapling": "Light Blue Wool Sapling",
+  "block.wool_trees.light_gray_wool": "com.atarikafa.wool_trees.light_gray_wool",
   "block.wool_trees.brown_wool_sapling": "Brown Wool Sapling",
   "itemGroup.tabwool_trees": "Wool Trees",
   "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
   "block.wool_trees.cyan_wool": "com.atarikafa.wool_trees.cyan_wool",
   "block.wool_trees.cyan_wool_sapling": "Cyan Wool Sapling",
+  "block.wool_trees.light_gray_wool_sapling": "Light Gray Wool Sapling",
   "block.wool_trees.brown_wool": "Brown Wool",
   "block.wool_trees.white_wool_sapling": "White Wool Sapling",
   "block.wool_trees.green_wool": "com.atarikafa.wool_trees.green_wool",

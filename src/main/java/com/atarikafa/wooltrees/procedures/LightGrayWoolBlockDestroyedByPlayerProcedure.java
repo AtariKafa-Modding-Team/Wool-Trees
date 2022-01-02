@@ -10,35 +10,35 @@ import net.minecraft.block.Blocks;
 
 import java.util.Map;
 
-import com.atarikafa.wooltrees.block.BlackWoolSaplingBlock;
+import com.atarikafa.wooltrees.block.LightGrayWoolSaplingBlock;
 import com.atarikafa.wooltrees.WoolTreesMod;
 
-public class BlackWoolBlockDestroyedByPlayerProcedure {
+public class LightGrayWoolBlockDestroyedByPlayerProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency world for procedure BlackWoolBlockDestroyedByPlayer!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency world for procedure LightGrayWoolBlockDestroyedByPlayer!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency x for procedure BlackWoolBlockDestroyedByPlayer!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency x for procedure LightGrayWoolBlockDestroyedByPlayer!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency y for procedure BlackWoolBlockDestroyedByPlayer!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency y for procedure LightGrayWoolBlockDestroyedByPlayer!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency z for procedure BlackWoolBlockDestroyedByPlayer!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency z for procedure LightGrayWoolBlockDestroyedByPlayer!");
 			return;
 		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency entity for procedure BlackWoolBlockDestroyedByPlayer!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency entity for procedure LightGrayWoolBlockDestroyedByPlayer!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
@@ -49,13 +49,13 @@ public class BlackWoolBlockDestroyedByPlayerProcedure {
 		if (!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false)) {
 			if (0.25 > Math.random()) {
 				if (world instanceof World && !world.isRemote()) {
-					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackWoolSaplingBlock.block));
+					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LightGrayWoolSaplingBlock.block));
 					entityToSpawn.setPickupDelay((int) 0);
 					world.addEntity(entityToSpawn);
 				}
 			} else {
 				if (world instanceof World && !world.isRemote()) {
-					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.BLACK_WOOL));
+					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.LIGHT_GRAY_WOOL));
 					entityToSpawn.setPickupDelay((int) 0);
 					world.addEntity(entityToSpawn);
 				}

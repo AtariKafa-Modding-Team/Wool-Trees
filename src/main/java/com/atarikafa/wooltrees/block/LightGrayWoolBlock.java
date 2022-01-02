@@ -15,7 +15,6 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -26,17 +25,17 @@ import java.util.HashMap;
 import java.util.Collections;
 import java.util.AbstractMap;
 
-import com.atarikafa.wooltrees.procedures.CyanWoolBlockDestroyedProcedure;
-import com.atarikafa.wooltrees.procedures.CyanWoolBlockDestroyedByPlayerProcedure;
+import com.atarikafa.wooltrees.procedures.LightGrayWoolBlockDestroyedByPlayerProcedure;
+import com.atarikafa.wooltrees.procedures.LightGrayWoolBlockDestroyedByExplosionProcedure;
 import com.atarikafa.wooltrees.WoolTreesModElements;
 
 @WoolTreesModElements.ModElement.Tag
-public class CyanWoolBlock extends WoolTreesModElements.ModElement {
-	@ObjectHolder("wool_trees:cyan_wool")
+public class LightGrayWoolBlock extends WoolTreesModElements.ModElement {
+	@ObjectHolder("wool_trees:light_gray_wool")
 	public static final Block block = null;
 
-	public CyanWoolBlock(WoolTreesModElements instance) {
-		super(instance, 13);
+	public LightGrayWoolBlock(WoolTreesModElements instance) {
+		super(instance, 29);
 	}
 
 	@Override
@@ -48,7 +47,7 @@ public class CyanWoolBlock extends WoolTreesModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.LEAVES).sound(SoundType.CLOTH).hardnessAndResistance(0.8f, 0.8f).setLightLevel(s -> 0));
-			setRegistryName("cyan_wool");
+			setRegistryName("light_gray_wool");
 		}
 
 		@Override
@@ -61,7 +60,7 @@ public class CyanWoolBlock extends WoolTreesModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.AIR));
+			return Collections.singletonList(new ItemStack(this, 0));
 		}
 
 		@Override
@@ -71,7 +70,7 @@ public class CyanWoolBlock extends WoolTreesModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 
-			CyanWoolBlockDestroyedByPlayerProcedure.executeProcedure(Stream
+			LightGrayWoolBlockDestroyedByPlayerProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
@@ -85,7 +84,7 @@ public class CyanWoolBlock extends WoolTreesModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 
-			CyanWoolBlockDestroyedProcedure.executeProcedure(Stream
+			LightGrayWoolBlockDestroyedByExplosionProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));

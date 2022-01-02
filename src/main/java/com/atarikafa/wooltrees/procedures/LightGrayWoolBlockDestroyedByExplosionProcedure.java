@@ -8,30 +8,30 @@ import net.minecraft.block.Blocks;
 
 import java.util.Map;
 
-import com.atarikafa.wooltrees.block.BlueWoolSaplingBlock;
+import com.atarikafa.wooltrees.block.LightGrayWoolSaplingBlock;
 import com.atarikafa.wooltrees.WoolTreesMod;
 
-public class BlueWoolBlockDestroyedProcedure {
+public class LightGrayWoolBlockDestroyedByExplosionProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency world for procedure BlueWoolBlockDestroyed!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency world for procedure LightGrayWoolBlockDestroyedByExplosion!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency x for procedure BlueWoolBlockDestroyed!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency x for procedure LightGrayWoolBlockDestroyedByExplosion!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency y for procedure BlueWoolBlockDestroyed!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency y for procedure LightGrayWoolBlockDestroyedByExplosion!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				WoolTreesMod.LOGGER.warn("Failed to load dependency z for procedure BlueWoolBlockDestroyed!");
+				WoolTreesMod.LOGGER.warn("Failed to load dependency z for procedure LightGrayWoolBlockDestroyedByExplosion!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
@@ -40,13 +40,13 @@ public class BlueWoolBlockDestroyedProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		if (0.25 > Math.random()) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlueWoolSaplingBlock.block));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LightGrayWoolSaplingBlock.block));
 				entityToSpawn.setPickupDelay((int) 0);
 				world.addEntity(entityToSpawn);
 			}
 		} else {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.BLUE_WOOL));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.LIGHT_GRAY_WOOL));
 				entityToSpawn.setPickupDelay((int) 0);
 				world.addEntity(entityToSpawn);
 			}

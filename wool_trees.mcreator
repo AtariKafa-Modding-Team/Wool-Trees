@@ -711,6 +711,90 @@
       "ids": {},
       "registry_name": "light_blue_wool",
       "path": "~/Blocks/Leaves/LightBlueWool"
+    },
+    {
+      "name": "LightGrayWoolSapling",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_gray_wool_sapling",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LightGrayWoolBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_gray_wool_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/LightGrayWool"
+    },
+    {
+      "name": "LightGrayWoolBlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_gray_wool_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Leaves/LightGrayWool"
+    },
+    {
+      "name": "LightGrayWool",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_gray_wool",
+      "path": "~/Blocks/Leaves/LightGrayWool"
     }
   ],
   "variable_elements": [],
@@ -718,11 +802,13 @@
   "language_map": {
     "en_us": {
       "block.wool_trees.light_blue_wool_sapling": "Light Blue Wool Sapling",
+      "block.wool_trees.light_gray_wool": "com.atarikafa.wool_trees.light_gray_wool",
       "block.wool_trees.brown_wool_sapling": "Brown Wool Sapling",
       "itemGroup.tabwool_trees": "Wool Trees",
       "block.wool_trees.blue_wool": "com.atarikafa.wool_trees.blue_wool",
       "block.wool_trees.cyan_wool": "com.atarikafa.wool_trees.cyan_wool",
       "block.wool_trees.cyan_wool_sapling": "Cyan Wool Sapling",
+      "block.wool_trees.light_gray_wool_sapling": "Light Gray Wool Sapling",
       "block.wool_trees.brown_wool": "Brown Wool",
       "block.wool_trees.white_wool_sapling": "White Wool Sapling",
       "block.wool_trees.green_wool": "com.atarikafa.wool_trees.green_wool",
@@ -776,6 +862,10 @@
               {
                 "name": "LightBlueWool",
                 "children": []
+              },
+              {
+                "name": "LightGrayWool",
+                "children": []
               }
             ]
           }
@@ -800,5 +890,5 @@
     "modElementsPackage": "com.atarikafa.wooltrees",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100351219
+  "mcreatorVersion": 202100352418
 }

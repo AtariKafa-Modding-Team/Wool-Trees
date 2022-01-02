@@ -38,12 +38,12 @@ import com.atarikafa.wooltrees.itemgroup.WoolTreesItemGroup;
 import com.atarikafa.wooltrees.WoolTreesModElements;
 
 @WoolTreesModElements.ModElement.Tag
-public class BlueWoolSaplingBlock extends WoolTreesModElements.ModElement {
-	@ObjectHolder("wool_trees:blue_wool_sapling")
+public class LightGrayWoolSaplingBlock extends WoolTreesModElements.ModElement {
+	@ObjectHolder("wool_trees:light_gray_wool_sapling")
 	public static final Block block = null;
 
-	public BlueWoolSaplingBlock(WoolTreesModElements instance) {
-		super(instance, 7);
+	public LightGrayWoolSaplingBlock(WoolTreesModElements instance) {
+		super(instance, 28);
 	}
 
 	@Override
@@ -62,7 +62,7 @@ public class BlueWoolSaplingBlock extends WoolTreesModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.PLANTS).sound(SoundType.PLANT).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0)
 					.doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
-			setRegistryName("blue_wool_sapling");
+			setRegistryName("light_gray_wool_sapling");
 		}
 
 		@Override
